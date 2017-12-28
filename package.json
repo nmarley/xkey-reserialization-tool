@@ -1,0 +1,27 @@
+{
+  "name": "xkey-reserialization-tool",
+  "version": "0.0.1",
+  "description": "Extended Key (Re)Serialization Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/index.js > ./vendor/index.js",
+    "linebreak-check": "eslint --rule 'linebreak-style: [\"error\", \"unix\"]' js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmarley/xkey-reserialization-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmarley/xkey-reserialization-tool/issues"
+  },
+  "homepage": "https://github.com/nmarley/xkey-reserialization-tool#readme",
+  "devDependencies": {
+    "bitcoinjs-lib": "^3.3.2",
+    "bs58check": "^2.1.1",
+    "browserify": "^14.3.0",
+    "eslint": "^4.8.0"
+  }
+}
